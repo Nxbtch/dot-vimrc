@@ -1,12 +1,35 @@
-Maple's Vim config
+hechen's Vim config
 ==================
 
-I use `vundle` to manage my plugins, which makes my `.vim` directory clean and tidy. If you are new to vim, the following two posts
+I use `Vundle` to manage my plugins, which makes my `.vim` directory clean and tidy. If you are new to vim, the following two posts
 
 * [Vim Introduction and Tutorial](http://blog.interlinked.org/tutorials/vim_tutorial.html)
 * [Vim plugins I use](http://mirnazim.org/writings/vim-plugins-i-use/)
 
 will be good for you.
+
+## Installation
+
+1. Backup your old vim configuration files:
+
+        mv ~/.vim ~/.vim.orig
+        mv ~/.vimrc ~/.vimrc.orig
+
+2. Clone and install this repo:
+
+        git clone git://github.com/nxbtch/dot-vimrc.git ~/.vim
+        ln -s ~/.vim/vimrc ~/.vimrc
+
+3. Setup `Vundle`:
+
+        git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
+
+        :PluginInstall
+
+Thst's it!
+
 
 #### Most of the time we are writing code so we need:
 ## Code Completions
@@ -45,9 +68,6 @@ sudo apt-get install vim-gtk               # Ubuntu
 
 ### Screenshots
 
-![Completions](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/completions.gif)
-![Snippets](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/snippets.gif)
-
 #### Sometimes we need to jump to previous positions to copy/paste or do some fixes:
 ## Fast navigation
 
@@ -65,15 +85,6 @@ sudo apt-get install vim-gtk               # Ubuntu
 * `%` -> Jump between brackets and html/xml tags
 * `<leader>` + `w` -> Beginning of the word.
 * `<leader>` + `f` + `{char}` -> Find {char} to the right.
-
-#### Doing fixes should be as fast as possible!
-## Fast editing
-
-* [surround](http://github.com/tpope/vim-surround) - Easily delete, change and add such surroundings in pairs.
-* [nerdcommenter](http://github.com/scrooloose/nerdcommenter) - Easy commenting of code for many filetypes.
-* [Gundo](https://github.com/sjl/gundo.vim/) - visualize your Vim undo tree.
-* [tabular](https://github.com/godlygeek/tabular) - Vim script for text filtering and alignment.
-* [IndentGuides](https://github.com/nathanaelkane/vim-indent-guides) - A Vim plugin for visually displaying indent levels in code.
 
 ### Tutorial
 
@@ -149,8 +160,6 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
 ### Screenshots
 
-![Vim IDE 1](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/vim.jpg)
-![Vim IDE 2](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/vim2.jpg)
 
 ## Other Utils
 
@@ -188,15 +197,7 @@ YAML         | js-yaml       | `npm install -g js-yaml`
   
 
 ## Themes
-
-* [blackboard](https://github.com/rickharris/vim-blackboard) - Textmate's Blackboard theme for vim (with iTerm2 theme)
-* [molokai](https://github.com/rickharris/vim-monokai) - A port of the monokai scheme for TextMate
 * [solarized](https://github.com/altercation/vim-colors-solarized) - precision colorscheme for the vim text editor
-* [vividchalk](https://github.com/tpope/vim-vividchalk) - colorscheme based on the Vibrant Ink theme for TextMate
-* [distinguished](https://github.com/Lokaltog/vim-distinguished) - A dark vim color scheme for 256-color terminals.
-* [tomorrow](https://github.com/chriskempson/vim-tomorrow-theme) - Tomorrow Theme for Vim
-* [fisa](https://github.com/fisadev/fisa-vim-colorscheme) - soft color scheme for terminals with 256 colors
-Clone in Mac
 
 ## Additional functions
 
@@ -213,42 +214,14 @@ Clone in Mac
    * PHP - Use soft-tabs with a two space indent(According to [Apache PHP Style Guide](http://svn.apache.org/repos/asf/shindig/trunk/php/docs/style-guide.html)).
    * Python - Use soft-tabs with a four space indent([PEP8](http://www.python.org/dev/peps/pep-0008/)).
 
-## Installation
 
-1. Backup your old vim configuration files:
-
-        mv ~/.vim ~/.vim.orig
-        mv ~/.vimrc ~/.vimrc.orig
-
-2. Clone and install this repo:
-
-        git clone git://github.com/humiaozuzu/dot-vimrc.git ~/.vim
-        ln -s ~/.vim/vimrc ~/.vimrc
-
-3. Setup `Vundle`:
-
-        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
-
-        :BundleInstall
-
-Thst's it!
-
-For installation on Windows, please refer to this post: http://blog.yoxyue.com/post/gvim-on-win7 (Thanks to [yoxyue](https://github.com/yoxyue))
 
 ## How to manage this vimrc?
 
 All plugins are listed in file `bundles.vim` with detailed comments, just add plugins as you like.
 
-1. `:BundleClean` to clean up unused plugins
-2. `:BundleInstall` to install newly added plugins
-3. `:BundleInstall!` to upgrade all plugins
+1. `:PluginClean` to clean up unused plugins
+2. `:PluginInstall` to install newly added plugins
+3. `:PluginList` to list all installed plugins
 
 Other configurations are also well organized in vimrc.
-
-## Known issues
-
-* Compeletions are not well supported for statically typed languages(c/c++)
-* Snippets are not shown in completions popups
-* May has some conflicts with GVIM
