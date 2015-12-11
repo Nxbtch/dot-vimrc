@@ -11,22 +11,22 @@ Plugin 'VundleVim/Vundle.vim'
 "------------------
 " Code Completions
 "------------------
-Plugin 'Shougo/neocomplcache'
+Plugin 'Shougo/neocomplete.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ervandew/supertab'
 " snippets
-Plugin 'garbas/vim-snipmate'
+" Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 "------ snipmate dependencies -------
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
+" Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'tomtom/tlib_vim'
 
 "-----------------
 " Fast navigation
 "-----------------
 Plugin 'edsono/vim-matchit'
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 
 "--------------
 " Fast editing
@@ -44,10 +44,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'humiaozuzu/TabBar'
 Plugin 'majutsushi/tagbar'
 Plugin 'mileszs/ack.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/syntastic'
+"
 Plugin 'bronson/vim-trailing-whitespace'
 
 "-------------
@@ -95,6 +96,11 @@ Plugin 'kien/rainbow_parentheses.vim'
 " Color Schemes
 "--------------
 Plugin 'altercation/vim-colors-solarized'
+
+"-------------
+"Elixir
+"-------------
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
