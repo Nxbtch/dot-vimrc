@@ -14,7 +14,8 @@ syntax on
 "--------
 " color scheme
 set background=dark
-color solarized
+let g:solarized_termcolors=256
+colorschem solarized
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
