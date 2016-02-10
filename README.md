@@ -8,6 +8,10 @@ I use `Vundle` to manage my plugins, which makes my `.vim` directory clean and t
 
 will be good for you.
 
+## Quick Install
+
+    curl -sSL https://raw.githubusercontent.com/Nxbtch/dot-vimrc/master/install.sh | sh
+
 ## Installation
 
 1. Backup your old vim configuration files:
