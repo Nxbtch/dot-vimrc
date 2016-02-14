@@ -62,13 +62,13 @@ Plugin 'nvie/vim-togglemouse'
 "----------------------------------------
 "------- web backend ---------
 Plugin '2072/PHP-Indenting-for-VIm'
-"Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 Plugin 'lepture/vim-jinja'
 "Plugin 'digitaltoad/vim-jade'
 
 "------- web frontend ----------
 Plugin 'othree/html5.vim'
-" Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-haml'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'nono/jquery.vim'
@@ -81,7 +81,7 @@ Plugin 'tpope/vim-markdown'
 " Plugin 'timcharper/textile.vim'
 
 "------- Ruby --------
-" Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-endwise'
 
 "------- Go ----------
 Plugin 'fatih/vim-go'
