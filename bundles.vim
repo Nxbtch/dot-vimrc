@@ -102,6 +102,18 @@ Plugin 'altercation/vim-colors-solarized'
 "-------------
 Plugin 'elixir-lang/vim-elixir'
 
+"-------------
+"Toml
+"-------------
+"
+
+Plugin 'cespare/vim-toml'
+
+"-------------
+"Rust
+"-------------
+Plugin 'rust-lang/rust.vim'
+
 call vundle#end()
 
 filetype plugin indent on     " required!
