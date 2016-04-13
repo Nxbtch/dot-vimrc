@@ -114,6 +114,10 @@ Plugin 'cespare/vim-toml'
 "-------------
 Plugin 'rust-lang/rust.vim'
 
+Plugin 'rking/ag.vim'
+
+Plugin 'rizzatti/dash.vim'
+
 call vundle#end()
 
 filetype plugin indent on     " required!
