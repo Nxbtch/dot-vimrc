@@ -297,7 +297,6 @@ nnoremap ; :
 :command Td Tbbd
 :command TD Tbbd
 
-
 " for macvim
 if has("gui_running")
     set go=aAce  " remove toolbar
