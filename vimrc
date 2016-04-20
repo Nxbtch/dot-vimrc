@@ -290,6 +290,13 @@ nnoremap ; :
 :command Q q
 :command Qa qa
 :command QA qa
+:command TP Tbbp
+:command Tp Tbbp
+:command Tn Tbbn
+:command TN Tbbn
+:command Td Tbbd
+:command TD Tbbd
+
 
 " for macvim
 if has("gui_running")
