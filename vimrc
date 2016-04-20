@@ -284,12 +284,12 @@ vmap <D-]> >gv
 
 " eggcache vim
 nnoremap ; :
-:command W w
-:command WQ wq
-:command Wq wq
-:command Q q
-:command Qa qa
-:command QA qa
+":command W w
+":command WQ wq
+":command Wq wq
+":command Q q
+":command Qa qa
+":command QA qa
 
 " for macvim
 if has("gui_running")
