@@ -118,6 +118,8 @@ Plugin 'rking/ag.vim'
 
 Plugin 'rizzatti/dash.vim'
 
+Plugin 'terryma/vim-multiple-cursors'
+
 call vundle#end()
 
 filetype plugin indent on     " required!
