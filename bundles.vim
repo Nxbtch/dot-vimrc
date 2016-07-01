@@ -120,6 +120,8 @@ Plugin 'rizzatti/dash.vim'
 
 Plugin 'terryma/vim-multiple-cursors'
 
+Plugin 'slim-template/vim-slim'
+
 call vundle#end()
 
 filetype plugin indent on     " required!

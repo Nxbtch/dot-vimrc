@@ -8,12 +8,13 @@ filetype plugin indent on
 
 " enable syntax hightlight and completion
 syntax on
+set term=screen-256color
 
 "--------
 " Vim UI
 "--------
 " color scheme
-set background=dark
+set background=light
 let g:solarized_termcolors=256
 colorschem solarized
 
@@ -245,9 +246,10 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
+nmap <F5> :TagbarToggle<CR>
+nmap <F6> :NERDTreeToggle<cr>
 nmap  <D-/> :
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]
@@ -321,3 +323,5 @@ endif
 
 " set delimitMate
 let delimitMate_matchpairs = "(:),[:],{:}"
+
+au BufRead,BufNewFile *.es6 setfiletype javascript
