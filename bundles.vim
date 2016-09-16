@@ -41,7 +41,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 " IDE features
 "--------------
 Plugin 'scrooloose/nerdtree'
-Plugin 'humiaozuzu/TabBar'
+" Plugin 'humiaozuzu/TabBar'
+Plugin 'ap/vim-buftabline'
 Plugin 'majutsushi/tagbar'
 Plugin 'mileszs/ack.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
