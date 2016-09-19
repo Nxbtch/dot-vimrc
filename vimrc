@@ -292,12 +292,12 @@ nnoremap ; :
 :command Q q
 :command Qa qa
 :command QA qa
-:command TP Tbbp
-:command Tp Tbbp
-:command Tn Tbbn
-:command TN Tbbn
-:command Td Tbbd
-:command TD Tbbd
+:command TP bprevious
+:command Tp bprevious
+:command Tn bnext
+:command TN bnext
+:command Td bdelete
+:command TD bdelete
 
 " for macvim
 if has("gui_running")
@@ -323,5 +323,9 @@ endif
 
 " set delimitMate
 let delimitMate_matchpairs = "(:),[:],{:}"
+
+let g:go_fmt_command = "goimports"
+let g:go_list_type = "quickfix"
+let g:syntastic_go_checkers = ['go', 'govet', 'errcheck']
 
 au BufRead,BufNewFile *.es6 setfiletype javascript
