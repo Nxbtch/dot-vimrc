@@ -49,8 +49,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/syntastic'
-"
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'steffanc/cscopemaps.vim'
 
 "-------------
 " Other Utils
@@ -91,7 +91,8 @@ Plugin 'fatih/vim-go'
 Plugin 'kien/rainbow_parentheses.vim'
 " Plugin 'wlangstroth/vim-racket'
 " Plugin 'vim-scripts/VimClojure'
-" Plugin 'rosstimson/scala-vim-support'
+
+Plugin 'derekwyatt/vim-scala'
 
 "--------------
 " Color Schemes
@@ -122,6 +123,10 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'slim-template/vim-slim'
+
+Plugin 'mfukar/robotframework-vim'
+
+Plugin 'evanmiller/nginx-vim-syntax'
 
 call vundle#end()
 

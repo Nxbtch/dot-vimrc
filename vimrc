@@ -25,6 +25,7 @@ set cursorline cursorcolumn
 
 " search
 set incsearch
+set hlsearch
 "set highlight 	" conflict with highlight current line
 set ignorecase
 set smartcase
@@ -251,6 +252,7 @@ nmap <F4> :IndentGuidesToggle<cr>
 nmap <F5> :TagbarToggle<CR>
 nmap <F6> :NERDTreeToggle<cr>
 nmap  <D-/> :
+nmap <F7> :SyntasticToggleMode<CR>
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]
 
@@ -326,6 +328,15 @@ let delimitMate_matchpairs = "(:),[:],{:}"
 
 let g:go_fmt_command = "goimports"
 let g:go_list_type = "quickfix"
-let g:syntastic_go_checkers = ['go', 'govet', 'errcheck']
+let g:syntastic_go_checkers = ['gometalinter']
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 
 au BufRead,BufNewFile *.es6 setfiletype javascript
