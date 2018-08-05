@@ -25,7 +25,6 @@ Plugin 'honza/vim-snippets'
 "-----------------
 " Fast navigation
 "-----------------
-Plugin 'edsono/vim-matchit'
 Plugin 'easymotion/vim-easymotion'
 
 "--------------
@@ -128,6 +127,9 @@ Plugin 'mfukar/robotframework-vim'
 
 Plugin 'evanmiller/nginx-vim-syntax'
 
+Plugin 'wannesm/wmgraphviz.vim'
+
 call vundle#end()
 
 filetype plugin indent on     " required!
+
